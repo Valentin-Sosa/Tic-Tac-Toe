@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/tic-tac-toe.png">
+    <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Tic Tac Toe</h1>
+  </header> 
+  <main>
+    <dialog id="start-game">
+        <form action="" method="dialog">
+            <label for="playerX">
+                Enter the name of Player X:
+                <input type="text" id="playerX" required>
+            </label>
+            <label for="playerO">
+                Enter the name of Player O:
+                <input type="text" id="playerO" required>
+            </label>
+            <button type="submit">Start</button>
+        </form>
+    </dialog>
+    <dialog id="restart-game">
+        <section>
+            <span id="winner"></span>
+            <button id="new-game">New game</button>
+            <button id="restart-btn">Next round</button>
+        </section>
+    </dialog>
+    <div>
+        <span id="turn"></span>
+        <button id="start-btn">Start Game</button>
+    </div>
+    <section id="gameboard">
+        <div class="square" data-row="0" data-column="0"></div>
+        <div class="square" data-row="0" data-column="1"></div>
+        <div class="square" data-row="0" data-column="2"></div>
+        <div class="square" data-row="1" data-column="0"></div>
+        <div class="square" data-row="1" data-column="1"></div>
+        <div class="square" data-row="1" data-column="2"></div>
+        <div class="square" data-row="2" data-column="0"></div>
+        <div class="square" data-row="2" data-column="1"></div>
+        <div class="square" data-row="2" data-column="2"></div>
+    </section>
+  </main>
+  <footer></footer> 
+</body>
+</html>

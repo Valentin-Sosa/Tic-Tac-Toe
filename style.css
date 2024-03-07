@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body
+{
+    background-color: #030712;
+}
+
+header
+{
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+    padding: 5vh 0;
+}
+
+main
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5vh;
+}
+
+main > div
+{
+    height: 4vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#start-btn
+{
+    background-color: white;
+    color: #1f2937;
+    border: none;
+    border-radius: 1rem;
+    padding: 2vh 4vw;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#start-btn:hover
+{
+    background-color: #374151;
+    color: white;
+}
+
+#gameboard
+{
+    height: 50vh;
+    width: 50vh;
+    background-color: black;
+    gap: 1vh;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3,1fr);
+}
+
+#gameboard > div
+{
+    background-color: white;
+}
+
+#turn
+{
+    display: none;
+    width: 20vw;
+    height: 3vh;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.square
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+#start-game, #restart-game
+{
+    position: absolute;
+    left: 40vw;
+    top:30vh;
+
+    width: 20vw;
+    padding: 2vh 2vw;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1em black;
+}
+
+dialog::backdrop 
+{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#start-game > form
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2vh;
+}
+
+form > button, #restart-btn, #new-game
+{
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #86efac;
+    height: 5vh;
+    width: 10vw;
+    align-self: center;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+form > button:hover
+{
+    background-color: #059669;
+    color: white;
+}
+
+#restart-btn
+{
+    background-color: #fbbf24;
+}
+
+#restart-btn:hover
+{
+    background-color: #ca8a04;
+    color: white;
+}
+
+#new-game
+{
+    background-color: #22c55e;
+}
+
+#new-game:hover
+{
+    background-color: #14532d;
+    color: white;
+}
+
+input[type=text]
+{
+    margin-top: 0.5vh;
+    height: 4vh;
+    outline: 0;
+    background-color: #e2e8f0;
+    border: none;
+    border-radius: 0.5rem;
+    padding-left: 1vw;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+label
+{
+    display: flex;
+    flex-direction: column;
+    font-weight: 450;
+}
+
+#restart-game > section
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2vh
+}
+
+#winner
+{
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
